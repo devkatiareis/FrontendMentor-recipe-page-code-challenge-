@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- displays site properly based on user's device -->
+
+    <!-- Displays site properly based on user's device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Favicon -->
     <link
       rel="icon"
       type="image/png"
@@ -13,7 +15,166 @@
     />
 
     <title>Frontend Mentor | Simple Omelette Recipe</title>
+
+    <!-- Google Fonts: Young Serif (400) & Outfit (400, 600, 700) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!-- Main recipe card -->
+    <main class="recipe-card">
+      <!-- Featured recipe image -->
+      <figure class="recipe-header">
+        <img
+          src="./assets/images/feature-image-omelette.jpeg"
+          alt="A freshly made simple omelette on a white plate sprinkled with green herbs"
+          class="recipe-image"
+        />
+      </figure>
+
+      <!-- Recipe content -->
+      <article class="recipe-content">
+        <h1 class="recipe-title" id="recipe-main-title">
+          Simple Omelette Recipe
+        </h1>
+
+        <p class="recipe-description">
+          An easy and quick dish, perfect for any meal. This classic omelette
+          combines beaten eggs cooked to perfection, optionally filled with your
+          choice of cheese, vegetables, or meats.
+        </p>
+
+        <!-- Preparation -->
+        <section class="prep-time-box" aria-labelledby="prep-title">
+          <h2 id="prep-title" class="prep-title">Preparation time</h2>
+
+          <ul class="prep-list">
+            <li><strong>Total:</strong> Approximately 10 minutes</li>
+            <li><strong>Preparation:</strong> 5 minutes</li>
+            <li><strong>Cooking:</strong> 5 minutes</li>
+          </ul>
+        </section>
+
+        <!-- Ingredients -->
+        <section class="recipe-section" aria-labelledby="ingredients-title">
+          <h2 id="ingredients-title" class="section-title">Ingredients</h2>
+
+          <ul class="ingredients-list">
+            <li>2–3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+          </ul>
+        </section>
+
+        <hr class="section-divider" aria-hidden="true" />
+
+        <!-- Instructions -->
+        <section class="recipe-section" aria-labelledby="instructions-title">
+          <h2 id="instructions-title" class="section-title">Instructions</h2>
+
+          <ol class="instructions-list">
+            <li>
+              <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
+              pinch of salt and pepper until well combined. Add a tablespoon of
+              water or milk if you prefer a fluffier texture.
+            </li>
+
+            <li>
+              <strong>Heat the pan:</strong> Place a non-stick frying pan over
+              medium heat and add butter or oil.
+            </li>
+
+            <li>
+              <strong>Cook the omelette:</strong> Once the butter has melted and
+              is bubbling, pour in the eggs. Tilt the pan to evenly coat the
+              surface.
+            </li>
+
+            <li>
+              <strong>Add fillings (optional):</strong> When the eggs begin to
+              set around the edges but remain slightly runny in the center,
+              sprinkle your chosen fillings over one half.
+            </li>
+
+            <li>
+              <strong>Fold and serve:</strong> Carefully lift one edge and fold
+              the omelette over the fillings. Cook for another minute before
+              sliding it onto a plate.
+            </li>
+
+            <li>
+              <strong>Enjoy:</strong> Serve immediately with additional salt and
+              pepper if desired.
+            </li>
+          </ol>
+        </section>
+
+        <hr class="section-divider" aria-hidden="true" />
+
+        <!-- Nutrition -->
+        <section class="recipe-section" aria-labelledby="nutrition-title">
+          <h2 id="nutrition-title" class="section-title">Nutrition</h2>
+
+          <p class="nutrition-description">
+            The table below shows nutritional values per serving without the
+            additional fillings.
+          </p>
+
+          <table class="nutrition-table" aria-labelledby="nutrition-title">
+            <tbody>
+              <tr>
+                <th scope="row">Calories</th>
+                <td>277kcal</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Carbs</th>
+                <td>0g</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Protein</th>
+                <td>20g</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Fat</th>
+                <td>22g</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+    </main>
+
+    <!-- Attribution -->
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Frontend Mentor </a
+      >. Coded by
+      <a
+        href="https://github.com/devkatiareis/FrontendMentor-recipe-page-code-challenge"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Katia Reis </a
+      >.
+    </footer>
+  </body>
 </html>
